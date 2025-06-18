@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniHub Event Calendar</title>
+    <link rel='stylesheet' type='text/css' href='/style/eventcalendar.css'>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <img src="/images/campusconnectlogowithouttext.png" alt="Campus Connect Logo">
+              <h1>UniHub</h1>
+            </div>
+            <ul class="nav">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/components/eventcalendar.html">Event Calendar</a></li>
+              <li><a href="/components/internship.html">Internship</a></li>
+              <li><a href="http://localhost:5000">E-learning</a></li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                </a>
+              </li>
+              <a class="sign-in" aria-label="Sign in" href="/components/signin.html" target="_top"><span class="gb_Q">Sign in</span></a>
+              <li>
+                
+              </li>
+            </ul>
+          
+          
+        </div>
+        </body>
+    <main>
+        <section class="hero">
+            <div class="split-text-container">
+                <span class="text-part left">EMBER</span>
+                <span class="text-part right">2025</span>
+            </div>
+            <p>Join us for the biggest student-led event of the year with workshops, performances, and networking opportunities!</p>
+            <a href="#register" class="btn">Register Now</a>
+        </section>
+    
+        <!-- Countdown Timer -->
+        <section class="countdown">
+            <div class="container">
+                <h2>Event Starts In</h2>
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-number">15</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number">07</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number">23</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number">42</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2 class="section-title">About The Event</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                Campus Fest 2025 is a three-day celebration of innovation, creativity, and student achievement. With over 50 events across multiple disciplines, this annual festival brings together students, faculty, alumni, and industry professionals for an unforgettable experience.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem;">
+                <div style="text-align: center; max-width: 200px;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">50+</div>
+                    <p>Events</p>
+                </div>
+                <div style="text-align: center; max-width: 200px;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">20+</div>
+                    <p>Speakers</p>
+                </div>
+                <div style="text-align: center; max-width: 200px;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">3</div>
+                    <p>Days</p>
+                </div>
+                <div style="text-align: center; max-width: 200px;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary);">5000+</div>
+                    <p>Attendees</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Events Section -->
+        <section id="events" class="container">
+            <section id="events" class="container">
+                <div class="controls">
+                    <button class="previous" onclick="window.scrollBy(-100, 0)">
+                      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                      </svg>
+                    </button>
+                    <button class="next" onclick="window.scrollBy(100, 0)">
+                      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="container">
+                    <h2>Upcoming Events</h2>
+                    
+                    <div class="events-container">
+                      <button class="scroll-btn scroll-left" id="scrollLeft">&#10094;</button>
+                      <div class="events-scroll" id="eventsScroll">
+                        <div class="event-card">
+                          <img src="/images/Hackathon.jpg" alt="Tech Hackathon">
+                          <div class="event-card-body">
+                            <h3 class="event-card-title">Tech Hackathon</h3>
+                            <p>Build innovative solutions to real-world problems in this 24-hour coding marathon.</p>
+                            <div class="event-card-details">
+                              <span>📅 April 15</span>
+                              <span>🕒 9:00 AM</span>
+                            </div>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Learn More</a>
+                          </div>
+                        </div>
+                        
+                        <div class="event-card">
+                          <img src="/images/Start-up.jpg" alt="Startup Pitch Competition">
+                          <div class="event-card-body">
+                            <h3 class="event-card-title">Startup Pitch</h3>
+                            <p>Pitch your business idea to investors and win funding to turn your vision into reality.</p>
+                            <div class="event-card-details">
+                              <span>📅 April 16</span>
+                              <span>🕒 2:00 PM</span>
+                            </div>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Learn More</a>
+                          </div>
+                        </div>
+                        
+                        <div class="event-card">
+                          <img src="/images/Cultural.jpg" alt="Cultural Show">
+                          <div class="event-card-body">
+                            <h3 class="event-card-title">Cultural Show</h3>
+                            <p>Experience diverse performances celebrating the rich cultural tapestry of our campus.</p>
+                            <div class="event-card-details">
+                              <span>📅 April 17</span>
+                              <span>🕒 6:00 PM</span>
+                            </div>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Learn More</a>
+                          </div>
+                        </div>
+                        
+                        <div class="event-card">
+                          <img src="/images/Research.jpg" alt="Research Showcase">
+                          <div class="event-card-body">
+                            <h3 class="event-card-title">Research Showcase</h3>
+                            <p>Discover groundbreaking research projects from students and faculty members.</p>
+                            <div class="event-card-details">
+                              <span>📅 April 16</span>
+                              <span>🕒 10:00 AM</span>
+                            </div>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Learn More</a>
+                          </div>
+                        </div>
+                        
+                        <div class="event-card">
+                          <img src="/images/Desgin.jpg" alt="Design Workshop">
+                          <div class="event-card-body">
+                            <h3 class="event-card-title">Design Workshop</h3>
+                            <p>Learn cutting-edge design techniques from industry professionals in this hands-on workshop.</p>
+                            <div class="event-card-details">
+                              <span>📅 April 15</span>
+                              <span>🕒 1:00 PM</span>
+                            </div>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Learn More</a>
+                          </div>
+                        </div>
+                        
+                        <div class="event-card">
+                          <img src="/images/Career.jpg" alt="Career Fair">
+                          <div class="event-card-body">
+                            <h3 class="event-card-title">Career Fair</h3>
+                            <p>Connect with top employers and explore internship and job opportunities in various fields.</p>
+                            <div class="event-card-details">
+                              <span>📅 April 17</span>
+                              <span>🕒 11:00 AM</span>
+                            </div>
+                            <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Learn More</a>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="scroll-btn scroll-right" id="scrollRight">&#10095;</button>
+                    </div>
+                  </div> 
+           
+        </section>
+    
+        <!-- Speakers Section -->
+        <section id="speakers" class="speakers">
+            <div class="container">
+                <h2 class="section-title">Featured Speakers</h2>
+                <div class="speakers-grid">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-card">
+                        <img src="/api/placeholder/200/200" alt="Speaker 1">
+                        <h3 class="speaker-name">Dr. Sarah Johnson</h3>
+                        <p class="speaker-role">AI Research Scientist</p>
+                    </div>
+                    
+                    <!-- Speaker 2 -->
+                    <div class="speaker-card">
+                        <img src="/api/placeholder/200/200" alt="Speaker 2">
+                        <h3 class="speaker-name">Prof. Michael Chen</h3>
+                        <p class="speaker-role">Quantum Computing Expert</p>
+                    </div>
+                    
+                    <!-- Speaker 3 -->
+                    <div class="speaker-card">
+                        <img src="/api/placeholder/200/200" alt="Speaker 3">
+                        <h3 class="speaker-name">Emma Rodriguez</h3>
+                        <p class="speaker-role">Tech Entrepreneur</p>
+                    </div>
+                    
+                    <!-- Speaker 4 -->
+                    <div class="speaker-card">
+                        <img src="/api/placeholder/200/200" alt="Speaker 4">
+                        <h3 class="speaker-name">David Kim</h3>
+                        <p class="speaker-role">UX Design Lead</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Schedule Section -->
+        <section id="schedule" class="container">
+            <h2 class="section-title">Event Schedule</h2>
+            <div class="schedule-tabs">
+                <button class="schedule-tab active">Day 1</button>
+                <button class="schedule-tab">Day 2</button>
+                <button class="schedule-tab">Day 3</button>
+            </div>
+            
+            <div class="schedule-content">
+                <!-- Schedule Day 1 -->
+                <div class="schedule-day">
+                    <!-- Schedule Item -->
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <span>9:00 AM</span>
+                            <span>10:30 AM</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3 class="schedule-title">Opening Ceremony</h3>
+                            <p class="schedule-speaker">University President & Student Council</p>
+                            <p>Welcome address and kickoff to Campus Fest 2025 with special performances.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Schedule Item -->
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <span>11:00 AM</span>
+                            <span>1:00 PM</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3 class="schedule-title">Tech Hackathon Kickoff</h3>
+                            <p class="schedule-speaker">Dr. Sarah Johnson</p>
+                            <p>Problem statement reveal and team formation for the 24-hour hackathon challenge.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Schedule Item -->
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <span>2:00 PM</span>
+                            <span>4:00 PM</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3 class="schedule-title">Design Thinking Workshop</h3>
+                            <p class="schedule-speaker">David Kim</p>
+                            <p>Hands-on workshop on applying design thinking methodology to solve complex problems.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Schedule Item -->
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <span>5:00 PM</span>
+                            <span>7:00 PM</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3 class="schedule-title">Networking Mixer</h3>
+                            <p class="schedule-speaker">Industry Partners & Alumni</p>
+                            <p>Connect with professionals and alumni in a casual setting with refreshments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Registration Section -->
+        <section id="register" class="registration">
+            <div class="container">
+                <h2 class="section-title">Register Now</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+                    Secure your spot at Campus Fest 2025! Registration includes access to all events, workshops, and networking sessions.
+                </p>
+                
+                <form id="registrationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="university">University/College</label>
+                            <input type="text" id="university" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="major">Major/Field of Study</label>
+                            <input type="text" id="major" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="events">Events You're Interested In (Select all that apply)</label>
+                        <div id="eventsList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox" name="events" value="hackathon"> Tech Hackathon
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox" name="events" value="startup"> Startup Pitch
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox" name="events" value="cultural"> Cultural Show
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox" name="events" value="research"> Research Showcase
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox" name="events" value="workshop"> Design Workshop
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox" name="events" value="career"> Career Fair
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn">Complete Registration</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>UniHub 2025</h3>
+                        <p>The biggest student-led event of the year, showcasing innovation, talent, and creativity across disciplines.</p>
+                        <div class="social-links">
+                            <a href="#"><span>FB</span></a>
+                            <a href="#"><span>TW</span></a>
+                            <a href="#"><span>IG</span></a>
+                            <a href="#"><span>LI</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <p>Email: UniHub@university.edu</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Location: University Student Center, Main Campus</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <p><a href="/components/about-us.html">About Us</a></p>
+                        <p><a href="#events">Events</a></p>
+                        <p><a href="#speakers">Speakers</a></p>
+                        <p><a href="#schedule">Schedule</a></p>
+                        <p><a href="#register">Register</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 . UniHub - v2.1 All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>      
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = {
+                first_name: document.getElementById('firstName').value,
+                last_name: document.getElementById('lastName').value,
+                college: document.getElementById('university').value,
+                email: document.getElementById('email').value,
+                phone_number: document.getElementById('phone').value,
+                field_of_study: document.getElementById('major').value,
+                events: Array.from(document.querySelectorAll('input[name="events"]:checked'))
+                    .map(checkbox => checkbox.value)
+            };
+        
+            try {
+                const response = await fetch('http://localhost:3000/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+        
+                const result = await response.json();
+                if (response.ok) {
+                    alert('Registration successful!');
+                    document.getElementById('registrationForm').reset();
+                } else {
+                    alert('Registration failed: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred during registration');
+            }
+        });
+        </script>
+    <script src="/js/.js"></script> 
+</body>
+</html>
